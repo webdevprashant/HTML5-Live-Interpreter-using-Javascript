@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title> HTML Live Interpreter </title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<h1 id='myh1'> Welcome to HTML5 Live Interpreter using JavaScript </h1>		
+	
+	<h2 id='codeoutputheading'> Code Output  </h2>
+	<div id='codewrittendiv'></div>
+		
+	<div>
+		<h2> Type Your HTML5 Code Here </h2>
+<textarea id='codearea' onkeyup='livehtmleditor()' ></textarea>
+	</div>
+</body>
+</html>
+
+<script>
+function livehtmleditor()      {
+	var codewritearea = document.getElementById('codewrittendiv');
+	var idoftextarea  = document.getElementById('codearea');
+	
+	codewritearea.innerHTML = idoftextarea.value	
+}
+</script>
